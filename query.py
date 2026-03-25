@@ -11,7 +11,7 @@ embedding = response["embedding"]
 
 results = collection.query(
     query_embeddings=[embedding],
-    n_results=3
+    n_results=1
 )
 
 for doc in results["documents"][0]:
